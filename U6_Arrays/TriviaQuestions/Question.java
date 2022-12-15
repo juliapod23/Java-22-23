@@ -5,12 +5,14 @@ public class Question {
     private String[] answers;
     private String correctAnswer;
     private int pointValue;
+    private boolean alreadyAsked;
 
     public Question(String question, String[] answers, String correctAnswer, int pointValue) {
         this.question = question;
         this.answers = answers;
         this.correctAnswer = correctAnswer;
         this.pointValue = pointValue;
+        this.alreadyAsked = false;
     }
 
     public String getQuestion() {
@@ -43,6 +45,14 @@ public class Question {
 
     public void setPointValue(int pointValue) {
         this.pointValue = pointValue;
+    }
+
+    public boolean isAlreadyAsked() {
+        return alreadyAsked;
+    }
+
+    public void setAlreadyAsked(boolean alreadyAsked) {
+        this.alreadyAsked = alreadyAsked;
     }
 
     /**
