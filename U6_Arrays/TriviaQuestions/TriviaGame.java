@@ -136,7 +136,7 @@ public class TriviaGame {
         output += percentCorrect + "%";
         return output;
     }
-
+ 
     // Getters and setters
 
     public Question[] getGeneratedQuestions() {

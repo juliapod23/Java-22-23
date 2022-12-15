@@ -14,7 +14,7 @@ public class Question {
         this.pointValue = pointValue;
         this.alreadyAsked = false;
     }
-
+ 
     public String getQuestion() {
         return question;
     }

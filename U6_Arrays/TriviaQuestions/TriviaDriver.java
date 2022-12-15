@@ -24,7 +24,7 @@ public class TriviaDriver {
         }
 
         System.out.println("And that's game! Here's how you did:");
-        myGame.displayStats();
+        myGame.displayStats(); 
 
     }
 
