@@ -1,0 +1,92 @@
+12
+What is the capital of Poland?
+a. Łodź
+b. Bydgoszcz
+c. Warsaw
+d. Lublin
+c
+100
+What is the capital of the United States?
+a. Washington D.C.
+b. Los Angeles
+c. Chicago
+d. New York City
+a
+50
+What is the capital of Brazil?
+a. São Paulo
+b. Brasília
+c. Rio de Janeiro
+d. Fortaleza
+b
+150
+What is the capital of Spain?
+a. Barcelona
+b. Valencia
+c. Málaga
+d. Madrid
+d
+100
+What is the capital of South Africa?
+a. Cape Town
+b. Johannesburg
+c. Pretoria
+d. East London
+b
+250
+6) What is the capital of Kazakhstan?
+a. Astana
+b. Almaty
+c. Semey
+d. Aktau
+a
+300
+What is the capital of Uganda?
+a. Mbarara
+b. Kampala
+c. Kira
+d. Lugazi
+b
+350
+What is the capital of Kuwait?
+a. Al Jahra
+b. Ahmadi
+c. Kuwait City
+d. Mahboula
+c
+250
+What is the capital of Mexico?
+a. Oaxaca
+b. Cancún
+c. Mexico City
+d. Puerto Vallarta
+c
+100
+What is the capital of Italy?
+a. Rome
+b. Venice
+c. Vatican City
+d. Naples
+a
+100
+What is the capital of Germany?
+a. Dresden
+b. Frankfurt
+c. Munich
+d. Berlin
+d
+100
+What is the capital of France?
+a. Nice
+b. Normandy
+c. Paris
+d. Bourdeaux
+c
+50
+
+
+
+
+
+
+
