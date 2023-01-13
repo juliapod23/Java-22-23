@@ -34,10 +34,10 @@ public class TriviaGame {
 
     /**
      * Takes in the text file and populates the question array
-     * @param filePath The created text file
+     *
      * @throws FileNotFoundException Exception to avoid error
      */
-    public void loadQuestions(String filePath) throws FileNotFoundException {
+    public void loadQuestions() throws FileNotFoundException {
         File myFile = new File(filePath);
         Scanner fileIn = new Scanner(myFile);
 
