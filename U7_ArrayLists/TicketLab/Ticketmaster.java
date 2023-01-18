@@ -22,18 +22,19 @@ public class Ticketmaster {
         //array of show objects
         ArrayList<Show> showList = new ArrayList<Show>();
         while(fileIn.hasNext()){
-            
-
-
-
-            Show temp = ;
+            String date = fileIn.next();
+            double price = fileIn.nextDouble();
+            int qty = fileIn.nextInt();
+            String perfCity = fileIn.next();
+            int comma = perfCity.indexOf(",");
+            String performer = perfCity.substring(0,comma);
+            String city = perfCity.substring(comma+1);
+            Show temp = new Show(date,price,qty,performer,city);
             shows.add(temp);
         }
-
-
     }
     public String toString(){
-        String output = "Date" + "\t" + "Price" + "\t";
+        String output = ;
         return output;
     }
 
