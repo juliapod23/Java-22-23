@@ -61,7 +61,13 @@ public class Show {
      */
     public String toString(){
         String output = "";
-        output += date + "\t" + "$" + price + "\t" + qty + "\t" + performer + "\t\t\t" + city;
+        output += date + "\t" + "$" + price + "\t" + qty + "\t" + performer;
+        if(performer.length()>7){
+            output+= "\t\t";
+        } else{
+            output+= "\t\t\t";
+        }
+        output += city;
         return output;
     }
 }
