@@ -7,13 +7,15 @@ import java.util.ArrayList;
 public class Ticketmaster {
     private ArrayList<Show> shows;
     private String filePath;
+    private int showCnt;
 
 
     //add constructor later
 
-    public Ticketmaster(ArrayList<Show> shows, String filePath) {
-        this.shows = shows;
+    public Ticketmaster(String filePath) {
+        this.shows = new ArrayList<Show>;
         this.filePath = filePath;
+        this.showCnt = 0;
     }
 
     //method to read in show data will populate each element of shows array
@@ -27,18 +29,22 @@ public class Ticketmaster {
         //array of show objects
         ArrayList<Show> showList = new ArrayList<Show>();
         while(fileIn.hasNext()){
+
             String date = fileIn.next();
             double price = fileIn.nextDouble();
             int qty = fileIn.nextInt();
             String perfCity = fileIn.next();
+
             int comma = perfCity.indexOf(",");
             String performer = perfCity.substring(0,comma);
-            String city = perfCity.substring(comma+1);
+            String city = perfCity.substring(comma+2);
+
             Show temp = new Show(date,price,qty,performer,city);
             shows.add(temp);
+            showCnt++;
 
-            if(fileIn.hasNextLine()){
-                fileIn.nextLine(); //dummy read
+            //if(fileIn.hasNextLine()){
+              //  fileIn.nextLine(); //dummy read
             }
         }
     }
@@ -49,8 +55,8 @@ public class Ticketmaster {
 
     public String toString(){
         String output = "";
-        for(int i = 0; i < showList.size(); i++){
-            output+= show.toString() + "\n";
+        for(Show line : shows){
+            output += line.toString() + "\n";
         }
         return output;
     }

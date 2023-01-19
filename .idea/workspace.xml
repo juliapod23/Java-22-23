@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="306f8d76-c27c-4cf1-8029-b0f1ef179dd2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/U7_ArrayLists/TicketLab/Show.java" beforeDir="false" afterPath="$PROJECT_DIR$/U7_ArrayLists/TicketLab/Show.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/U7_ArrayLists/TicketLab/Ticketmaster.java" beforeDir="false" afterPath="$PROJECT_DIR$/U7_ArrayLists/TicketLab/Ticketmaster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/U7_ArrayLists/TicketLab/TicketmasterDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/U7_ArrayLists/TicketLab/TicketmasterDriver.java" afterDir="false" />
-    </list>
+    <list default="true" id="306f8d76-c27c-4cf1-8029-b0f1ef179dd2" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +12,19 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="74f1dcd5-2a8c-49ea-bd76-b7b6224e4bbf" />
+        <option name="url" value="https://github.com/juliapod23/Java-22-23.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -40,6 +48,16 @@
     "settings.editor.selected.configurable": "editor.preferences.tabs"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="corretto-1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <module name="Java-22-23" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

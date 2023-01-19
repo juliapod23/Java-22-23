@@ -17,5 +17,8 @@ public class TicketmasterDriver {
         //        in.nextLine();  //dummy read to clear bad data out
         //    }
 
+        Ticketmaster test = new Ticketmaster("showData.txt");
+
+        System.out.println(test.toString());
     }
 }//will keep asking user for a num til a valid entry is entered}
