@@ -11,6 +11,11 @@ public class Ticketmaster {
 
     //add constructor later
 
+    public Ticketmaster(ArrayList<Show> shows, String filePath) {
+        this.shows = shows;
+        this.filePath = filePath;
+    }
+
     //method to read in show data will populate each element of shows array
     //while loop of adding toStringed shows to ticketmaster toString, which will print the collection of toStringed shows
 
@@ -31,10 +36,22 @@ public class Ticketmaster {
             String city = perfCity.substring(comma+1);
             Show temp = new Show(date,price,qty,performer,city);
             shows.add(temp);
+
+            if(fileIn.hasNextLine()){
+                fileIn.nextLine(); //dummy read
+            }
         }
     }
+
+    public ArrayList<Show> getShows() {
+        return shows;
+    }
+
     public String toString(){
-        String output = ;
+        String output = "";
+        for(int i = 0; i < showList.size(); i++){
+            output+= show.toString() + "\n";
+        }
         return output;
     }
 

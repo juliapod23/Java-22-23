@@ -60,7 +60,7 @@ public class Show {
      * @return String output of a formatted show
      */
     public String toString(){
-        String output = date + "\t" + price + "\t" + qty + "\t" + performer + "\t" + city;
+        String output = date + "\t" + "$" + price + "\t" + qty + "\t" + performer + "\t\t\t" + city;
         return output;
     }
 }
