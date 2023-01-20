@@ -58,4 +58,9 @@ public class Ticketmaster {
         return output;
     }
 
+    public void startTicketMaster(){
+        System.out.println("\t\t\t\t\t\t**** Welcome to the TicketMaster Kiosk ****\nYou may search our shows by city as well as sort the shows by performer and ticket price")+
+        ;
+    }
+
 }
