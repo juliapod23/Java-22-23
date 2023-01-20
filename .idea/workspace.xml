@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="306f8d76-c27c-4cf1-8029-b0f1ef179dd2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/U7_ArrayLists/TicketLab/Ticketmaster.java" beforeDir="false" afterPath="$PROJECT_DIR$/U7_ArrayLists/TicketLab/Ticketmaster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/U7_ArrayLists/TicketLab/TicketmasterDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/U7_ArrayLists/TicketLab/TicketmasterDriver.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
