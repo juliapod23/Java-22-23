@@ -29,8 +29,7 @@ public class Item {
      * Where 10 represents the quantity
      */
     public String toString() {
-        String output = "Item name: " + this.name + "($" +this.cost + "), qty = " + this.quantity + ")";
-
+        String output = this.name + ", $" +this.cost + ", " + this.quantity;
         return output;
     }
 
