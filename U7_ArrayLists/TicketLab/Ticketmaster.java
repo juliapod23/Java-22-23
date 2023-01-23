@@ -59,10 +59,26 @@ public class Ticketmaster {
     }
 
     public void startTicketMaster(){
-        String output = "\t\t\t\t\t\t**** Welcome to the TicketMaster Kiosk ****\nYou may search our shows by city as well as sort the shows by performer and ticket price"+
-                "\n\t\t\t\tSelect the correct option corresponding with your choice:"+
-                "1. Search by City\n2. Sort by Performer(A-Z)\n3. Sort by Performer(Z-A)\n4. Sort by Price(Low-High)\n5. Sort by Price(High-Low)\n6. Quit";
-
+        String output = "\t\t\t\t\t\t**** Welcome to the TicketMaster Kiosk ****\nYou may search our shows by city as well as sort the shows by performer and ticket price"+ "\n\t\t\t\tSelect the correct option corresponding with your choice:"+ "1. Search by City\n2. Sort by Performer(A-Z)\n3. Sort by Performer(Z-A)\n4. Sort by Price(Low-High)\n5. Sort by Price(High-Low)\n6. Quit";
     }
 
+    public boolean ifValid(int[] choices){
+        for (int num: choices) {
+            if(num == validDigit){
+                return true;
+            }
+        }
+    }
+
+    public void linearSearch(){
+        System.out.println("What city would you like to search for?");
+        String city = input.nextLine;
+        output = "";
+        for(int i = 0; i < shows.size; i++){
+            if(shows(i).getCity.equals(city)){
+                output += shows(i);
+            }
+        }
+        return output;
+    }
 }
