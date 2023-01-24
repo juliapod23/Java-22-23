@@ -39,15 +39,7 @@ public class Ticketmaster {
 
             Show temp = new Show(date, price, qty, performer, city);
             shows.add(temp);
-
-            if (fileIn.hasNextLine()) {
-                fileIn.nextLine(); //dummy read
-            }
         }
-    }
-
-    public ArrayList<Show> getShows() {
-        return shows;
     }
 
     public String toString(){
@@ -58,19 +50,19 @@ public class Ticketmaster {
         return output;
     }
 
-    public void startTicketMaster(){
-        String output = "\t\t\t\t\t\t**** Welcome to the TicketMaster Kiosk ****\nYou may search our shows by city as well as sort the shows by performer and ticket price"+ "\n\t\t\t\tSelect the correct option corresponding with your choice:"+ "1. Search by City\n2. Sort by Performer(A-Z)\n3. Sort by Performer(Z-A)\n4. Sort by Price(Low-High)\n5. Sort by Price(High-Low)\n6. Quit";
-    }
+    public void linearSearch(String city){
+        ArrayList<Show> curItems = new ArrayList<Show>();
 
-    public void linearSearch(){
-        System.out.println("What city would you like to search for?");
-        String city = nextLine();
-        String output = "";
-        for(int i = 0; i < shows.size; i++){
-            if(shows.get(i).getCity.equals(city)){
-                output += shows(i);
+        for(int i = 0; i < shows.size(); i++){
+            if(shows.get(i).getCity.equalsIgnoreCase(city)){
+                curItems.add(shows.get(i));
             }
         }
-        return output;
+
+        displayItems(curItems);
+    }
+
+    public void displayItems(ArrayList<Show> curItems){
+
     }
 }

@@ -1,6 +1,7 @@
 package U7_ArrayLists.TicketLab;
 
 public class Show {
+    public String getCity;
     private String date;
     private double price;
     private int qty;
@@ -61,13 +62,7 @@ public class Show {
      */
     public String toString(){
         String output = "";
-        output += date + "\t" + "$" + price + "\t" + qty + "\t" + performer;
-        if(performer.length()>7){
-            output+= "\t\t";
-        } else{
-            output+= "\t\t\t";
-        }
-        output += city;
+        output += date + "\t" + "$" + price + "\t" + qty + "\t" + performer + "\t\t" + city;
         return output;
     }
 }
