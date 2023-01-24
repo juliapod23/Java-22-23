@@ -64,7 +64,7 @@ public class Ticketmaster {
 
     public void linearSearch(){
         System.out.println("What city would you like to search for?");
-        String city = String.nextLine;
+        String city = nextLine();
         String output = "";
         for(int i = 0; i < shows.size; i++){
             if(shows.get(i).getCity.equals(city)){
