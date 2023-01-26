@@ -8,9 +8,6 @@ public class Ticketmaster {
     private ArrayList<Show> shows;
     private String filePath;
 
-
-    //add constructor later
-
     public Ticketmaster(String filePath) {
         this.shows = new ArrayList<Show>();
         this.filePath = filePath;
@@ -50,19 +47,36 @@ public class Ticketmaster {
         return output;
     }
 
-    public void linearSearch(String city){
+    public ArrayList<Show> linearSearch(String city){
         ArrayList<Show> curItems = new ArrayList<Show>();
 
         for(int i = 0; i < shows.size(); i++){
-            if(shows.get(i).getCity.equalsIgnoreCase(city)){
+            if(shows.get(i).getCity().equalsIgnoreCase(city)){
                 curItems.add(shows.get(i));
             }
         }
+        if(curItems.size()==0){
+            System.out.println("There are no shows taking place in "+ city +".");
+        }
 
-        displayItems(curItems);
+        return curItems;
     }
 
-    public void displayItems(ArrayList<Show> curItems){
+    public void sortByAlpha(ArrayList<Show> shows){
+        for(int i = 0; i < shows.size() - 1; i++){
+            int minIndex = i;
 
+            //look for smallest remaining index from index i onwards
+            for(int j = i+1; j < shows.size(); j++){
+                if(shows.get(j).equals(shows.get(minIndex))){
+                    minIndex = j;
+                }
+            }
+
+            //swap values at index i & index minIndex
+            Integer temp = shows.get(i);
+            shows.set(i, shows.get(minIndex));
+            shows.set(minIndex,temp);
+        }
     }
 }

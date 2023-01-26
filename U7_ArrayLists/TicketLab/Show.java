@@ -64,14 +64,21 @@ public class Show {
         String output = "";
         output += date + "\t" + "$" + price + "\t\t" + qty + "\t\t" + performer;
 
-        if (performer.length()<11){
+        if (performer.length()<=11&& performer.length() > 7){
             output+= "\t\t\t";
+        } else if(performer.length() <= 7){
+            output+="\t\t\t\t";
         }
-        else{
+        else if (performer.length()>14) {
+            output+="\t";
+            if(city.length()> 12){
+                output+="\t";
+            }
+        } else{
             output+= "\t\t";
         }
 
-        output += city;
+        output += " " + city;
         return output;
     }
 }
