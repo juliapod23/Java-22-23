@@ -62,7 +62,7 @@ public class Ticketmaster {
         return curItems;
     }
 
-    public void sortByAlpha(ArrayList<Show> shows){
+    /*public void sortByAlpha(ArrayList<Show> shows){
         for(int i = 0; i < shows.size() - 1; i++){
             int minIndex = i;
 
@@ -74,9 +74,9 @@ public class Ticketmaster {
             }
 
             //swap values at index i & index minIndex
-            Integer temp = shows.get(i);
+            //Integer temp = shows.get(i);
             shows.set(i, shows.get(minIndex));
             shows.set(minIndex,temp);
         }
-    }
+    }*/
 }

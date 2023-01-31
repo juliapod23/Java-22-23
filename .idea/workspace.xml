@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="306f8d76-c27c-4cf1-8029-b0f1ef179dd2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/U7_ArrayLists/Notes_7_5/BinarySearchExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/U7_ArrayLists/Notes_7_5/BinarySearchExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/U7_ArrayLists/TicketLab/Ticketmaster.java" beforeDir="false" afterPath="$PROJECT_DIR$/U7_ArrayLists/TicketLab/Ticketmaster.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,8 +46,8 @@
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/tikit/OneDrive/Documents/GitHub/M359-22-23",
-    "project.structure.last.edited": "SDKs",
+    "last_opened_file_path": "C:/Users/tikit/OneDrive/Documents/GitHub/Java-22-23",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
@@ -60,9 +60,17 @@
   </component>
   <component name="RunManager">
     <configuration name="TicketmasterDriver" type="Application" factoryName="Application">
-      <option name="ALTERNATIVE_JRE_PATH" value="corretto-1.8" />
+      <option name="ALTERNATIVE_JRE_PATH" value="11 (2)" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="U7_ArrayLists.TicketLab.TicketmasterDriver" />
       <module name="Java-22-23" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../../../../Local Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="U7_ArrayLists.TicketLab.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -90,7 +98,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/master" />
+                        <option value="master(school)" />
                       </list>
                     </value>
                   </entry>
