@@ -62,13 +62,13 @@ public class Ticketmaster {
         return curItems;
     }
 
-    public void sortByAlpha(ArrayList<Show> shows){
+    public void sortByAlpha(){
         for(int i = 0; i < shows.size() - 1; i++){
             int minIndex = i;
 
             //look for smallest remaining index from index i onwards
             for(int j = i+1; j < shows.size(); j++){
-                if(shows.get(j).getPerformer().compareTo(shows.get(j+1).getPerformer()) < 0){
+                if(shows.get(j).getPerformer().compareTo(shows.get(minIndex).getPerformer()) < 0){
                     minIndex = j;
                 }
             }
@@ -80,13 +80,13 @@ public class Ticketmaster {
         }
     }
 
-    public void sortByReverseAlpha(ArrayList<Show> shows){
+    public void sortByReverseAlpha(){
         for(int i = 0; i < shows.size() - 1; i++){
             int minIndex = i;
 
             //look for largest remaining index from index i onwards
             for(int j = i+1; j < shows.size(); j++){
-                if(shows.get(j).getPerformer().compareTo(shows.get(j+1).getPerformer()) > 0){
+                if(shows.get(j).getPerformer().compareTo(shows.get(minIndex).getPerformer()) > 0){
                     minIndex = j;
                 }
             }
@@ -99,15 +99,17 @@ public class Ticketmaster {
     }
 
     public void sortByPrice(ArrayList<Show> shows){
-        for(int i = 1; i < shows.size(); i++){
+/*        for(int i = 1; i < shows.size(); i++){
             Show currentValue = shows.get(i);
 
-            Show j = shows.get(i - 1);
+            double curPrice = shows.get(i - 1).getPrice();
             while(j >= 0 && shows.get(j) > currentValue){
                 shows.get(j+1) = shows.get(j);
                 j--;
             }
             shows.get(j+1) = currentValue;
         }
+
+ */
     }
 }

@@ -37,13 +37,15 @@ public class TicketmasterDriver {
                      System.out.println("You entered: " + num);
 
                      System.out.println("Here are shows sorted by performers A-Z:");
-                     ArrayList<Show> results = test.sortByAlpha();
+                     test.sortByAlpha();
+
+                     System.out.println(test.toString());
 
                  } else if (num == 3){ // sort by performer(z-a)
                      System.out.println("You entered: " + num);
 
                      System.out.println("Here are shows sorted by performers Z-A:");
-                     ArrayList<Show> results = test.sortByReverseAlpha(test);
+                     test.sortByReverseAlpha();
 
                  }else if (num == 4){ // sort by price(low-high)
                      System.out.println("You entered: " + num);
