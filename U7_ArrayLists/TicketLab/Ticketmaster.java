@@ -13,10 +13,11 @@ public class Ticketmaster {
         this.filePath = filePath;
     }
 
-    //method to read in show data will populate each element of shows array
-    //while loop of adding toStringed shows to ticketmaster toString, which will print the collection of toStringed shows
-
-
+    /**
+     * Scans the show data file and saves each token and creates a show object out of accumulated tokens.
+     * Adds each show object to an ArrayList.
+     * @throws FileNotFoundException
+     */
     public void readShows() throws FileNotFoundException {
         File myFile = new File(filePath);
         Scanner fileIn = new Scanner(myFile);
@@ -39,6 +40,10 @@ public class Ticketmaster {
         }
     }
 
+    /**
+     * Formats each show object in the ArrayList
+     * @return Formatted shows ArrayList
+     */
     public String toString(){
         String output = "";
         for(Show line : shows){
@@ -47,6 +52,7 @@ public class Ticketmaster {
         return output;
     }
 
+    
     public ArrayList<Show> linearSearch(String city){
         ArrayList<Show> curItems = new ArrayList<Show>();
 
@@ -98,18 +104,29 @@ public class Ticketmaster {
         }
     }
 
-    public void sortByPrice(ArrayList<Show> shows){
-/*        for(int i = 1; i < shows.size(); i++){
-            Show currentValue = shows.get(i);
-
-            double curPrice = shows.get(i - 1).getPrice();
-            while(j >= 0 && shows.get(j) > currentValue){
-                shows.get(j+1) = shows.get(j);
-                j--;
+    public void sortByPrice(){
+        for(int i = 1; i < shows.size(); i++){
+            Show valueToInsert = shows.get(i);
+            int position = i;
+            while(position > 0 && shows.get(position - 1).getPrice() > valueToInsert.getPrice()){
+                shows.set(position,shows.get(position - 1));
+                position--;
             }
-            shows.get(j+1) = currentValue;
+            shows.set(position,valueToInsert);
         }
 
- */
+    }
+
+    public void sortByReversePrice(){
+        for(int i = 1; i < shows.size(); i++){
+            Show valueToInsert = shows.get(i);
+            int position = i;
+            while(position > 0 && shows.get(position - 1).getPrice() < valueToInsert.getPrice()){
+                shows.set(position,shows.get(position - 1));
+                position--;
+            }
+            shows.set(position,valueToInsert);
+        }
+
     }
 }
