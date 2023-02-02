@@ -27,8 +27,8 @@ public class TicketmasterDriver {
 
                      System.out.println("Here are the shows taking place in " + city + ":\n");
                      ArrayList<Show> results = test.linearSearch(city);
-                     for (int i = 0; i < results.size(); i++){
-                         System.out.println(results.get(i));
+                     for (Show result : results) {
+                         System.out.println(result);
                      }
 
                  } else if (num == 2) { // sort by performer(a-z)
@@ -37,7 +37,7 @@ public class TicketmasterDriver {
                      System.out.println("Here are shows sorted by performers A-Z:");
                      test.sortByAlpha();
 
-                     System.out.println(test.toString());
+                     System.out.println(test); // .toString??
 
                  } else if (num == 3){ // sort by performer(z-a)
                      System.out.println("You entered: " + num);
@@ -45,7 +45,7 @@ public class TicketmasterDriver {
                      System.out.println("Here are shows sorted by performers Z-A:");
                      test.sortByReverseAlpha();
 
-                     System.out.println(test.toString());
+                     System.out.println(test); // .toString??
 
                  }else if (num == 4){ // sort by price(low-high)
                      System.out.println("You entered: " + num);
@@ -53,7 +53,7 @@ public class TicketmasterDriver {
                      System.out.println("Here are shows sorted by price Low - High:");
                      test.sortByPrice();
 
-                     System.out.println(test.toString());
+                     System.out.println(test); // .toString??
 
                  }else if (num == 5){ // sort by price(high-low)
                      System.out.println("You entered: " + num);
@@ -61,7 +61,7 @@ public class TicketmasterDriver {
                      System.out.println("Here are shows sorted by price High - Low:");
                      test.sortByReversePrice();
 
-                     System.out.println(test.toString());
+                     System.out.println(test); // .toString??
 
                  }else if (num == 6){ // quit
                      System.out.println("You entered: " + num);

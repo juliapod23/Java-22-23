@@ -9,21 +9,19 @@ public class Ticketmaster {
     private String filePath;
 
     public Ticketmaster(String filePath) {
-        this.shows = new ArrayList<Show>();
+        this.shows = new ArrayList<>();
         this.filePath = filePath;
     }
 
     /**
      * Scans the show data file and saves each token and creates a show object out of accumulated tokens.
      * Adds each show object to an ArrayList.
-     * @throws FileNotFoundException
+     * @throws FileNotFoundException If there is no file present, throw exception
      */
     public void readShows() throws FileNotFoundException {
         File myFile = new File(filePath);
         Scanner fileIn = new Scanner(myFile);
 
-        //array of show objects
-        ArrayList<Show> showList = new ArrayList<Show>();
         while (fileIn.hasNext()) {
 
             String date = fileIn.next();
@@ -52,9 +50,14 @@ public class Ticketmaster {
         return output;
     }
 
-    
+    /**
+     * Searches linearly through the shows ArrayList to find shows that match with the user inputted city.
+     * Adds matches to a new ArrayList.
+     * @param city User inputted city
+     * @return List of shows that occur in the user's preferred city
+     */
     public ArrayList<Show> linearSearch(String city){
-        ArrayList<Show> curItems = new ArrayList<Show>();
+        ArrayList<Show> curItems = new ArrayList<>();
 
         for (Show show : shows) {
             if (show.getCity().equalsIgnoreCase(city)) {
@@ -68,6 +71,9 @@ public class Ticketmaster {
         return curItems;
     }
 
+    /**
+     * Using selection sort, sorts the ArrayList of shows alphabetically by comparing each show element's artist to the others.
+     */
     public void sortByAlpha(){
         for(int i = 0; i < shows.size() - 1; i++){
             int minIndex = i;
@@ -86,6 +92,9 @@ public class Ticketmaster {
         }
     }
 
+    /**
+     * Using selection sort, sorts the ArrayList of shows reverse alphabetically by comparing each show element's artist to the others.
+     */
     public void sortByReverseAlpha(){
         for(int i = 0; i < shows.size() - 1; i++){
             int minIndex = i;
@@ -104,12 +113,15 @@ public class Ticketmaster {
         }
     }
 
+    /**
+     * Using insertion sort, sorts the ArrayList of shows from lowest to highest price by comparing each show element's price to the others.
+     */
     public void sortByPrice(){
         for(int i = 1; i < shows.size(); i++){
             Show valueToInsert = shows.get(i);
             int position = i;
             while(position > 0 && shows.get(position - 1).getPrice() > valueToInsert.getPrice()){
-                shows.set(position,shows.get(position - 1));
+                shows.set(position,shows.get(position - 1)); // Shift right
                 position--;
             }
             shows.set(position,valueToInsert);
@@ -117,12 +129,15 @@ public class Ticketmaster {
 
     }
 
+    /**
+     * Using insertion sort, sorts the ArrayList of shows from highest to lowest price by comparing each show element's price to the others.
+     */
     public void sortByReversePrice(){
         for(int i = 1; i < shows.size(); i++){
             Show valueToInsert = shows.get(i);
             int position = i;
             while(position > 0 && shows.get(position - 1).getPrice() < valueToInsert.getPrice()){
-                shows.set(position,shows.get(position - 1));
+                shows.set(position,shows.get(position - 1)); // Shift right
                 position--;
             }
             shows.set(position,valueToInsert);

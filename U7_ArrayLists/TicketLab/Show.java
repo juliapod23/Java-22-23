@@ -1,13 +1,13 @@
 package U7_ArrayLists.TicketLab;
 
 public class Show {
-    public String getCity;
     private String date;
     private double price;
     private int qty;
     private String performer;
     private String city;
 
+    // constructor
     public Show(String date, double price, int qty, String performer, String city) {
         this.date = date;
         this.price = price;
